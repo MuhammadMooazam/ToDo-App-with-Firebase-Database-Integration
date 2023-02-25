@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+.delBtn {
+    background-color: aqua;
+}
+
+.editBtn {
+    background-color: blueviolet;
+}

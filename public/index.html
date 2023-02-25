@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAd6cYpLU74lcfv-zApIXr_2Or1N41bWds",
+            authDomain: "fir-practicewebdevelopment.firebaseapp.com",
+            databaseURL: "https://fir-practicewebdevelopment-default-rtdb.firebaseio.com",
+            projectId: "fir-practicewebdevelopment",
+            storageBucket: "fir-practicewebdevelopment.appspot.com",
+            messagingSenderId: "279648725571",
+            appId: "1:279648725571:web:7d8031a04025389d55c2f6",
+            measurementId: "G-5R6X7H6DFN"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <title>ToDo Application Mooazam</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="todo" placeholder="Enter Activity">
+        <button onclick="addTodo()">ADD ITEM</button>
+        <button onclick="deleteAll()">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
